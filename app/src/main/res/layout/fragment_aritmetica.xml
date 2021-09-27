@@ -6,9 +6,73 @@
     tools:context=".aritmetica.Aritmetica">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Calcular operaciones Aritmética (Suma y Resta) de numeros binarios" />
 
+<!--    <TextView-->
+<!--        android:layout_width="242dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:text="Calcular operaciones Aritmética (Suma y Resta) de numeros binarios" />-->
+
+    <EditText
+        android:id="@+id/txt_num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Ingresa el valor"
+        android:inputType="number"
+        android:textSize="20sp"/>
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+    <EditText
+        android:id="@+id/txt_num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="110dp"
+        android:ems="10"
+        android:hint="Ingresa el valor"
+        android:inputType="number"
+        android:textSize="20sp"/>
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/txt_num1" />-->
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restar"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="230dp"
+        android:onClick="Restar" />
+
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="230dp"
+        android:onClick="Sumar"
+        android:text="SUMAR"/>
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/txt_num2"/>-->
+
+    <TextView
+        android:id="@+id/txt_resusltado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="300dp"
+        android:text="RESULTADO"
+        android:textSize="20sp"/>
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/button1" />-->
 </FrameLayout>
