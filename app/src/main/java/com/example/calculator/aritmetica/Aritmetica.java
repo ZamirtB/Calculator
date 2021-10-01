@@ -65,16 +65,5 @@ public class Aritmetica extends Fragment {
         return inflater.inflate(R.layout.fragment_aritmetica, container, false);
     }
 
-//        public void Sumar(View view) {
-//        String valor1 = et1.getText().toString();
-//        String valor2 = et2.getText().toString();
-//
-//        int num1 = Integer.parseInt(valor1);
-//        int num2 = Integer.parseInt(valor2);
-//
-//        int suma = num1 + num2;
-//
-//        String result = String.valueOf(suma);
-//        tv1.setText(result);
-//    }
+
 }
