@@ -11,4 +11,71 @@
         android:layout_height="match_parent"
         android:text="Calculadora de decimal a Binario, Octal y Hexadecimal" />
 
+
+
+    <EditText
+        android:id="@+id/txt_num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Ingresa el valor"
+        android:inputType="number"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/txt_num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="110dp"
+        android:ems="10"
+        android:hint="Ingresa el valor"
+        android:inputType="number"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OCTAL"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="230dp"
+        android:onClick="Octal" />
+
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="230dp"
+        android:onClick="Binario"
+        android:text="BINARIO"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HEXADECIMAL"
+        android:layout_marginStart="260dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="230dp"
+        android:onClick="Hexadecimal" />
+
+    <TextView
+        android:id="@+id/txt_resusltado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="300dp"
+        android:text="RESULTADO"
+        android:textSize="20sp"/>
 </FrameLayout>

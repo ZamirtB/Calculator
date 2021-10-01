@@ -6,16 +6,14 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+//import android.widget.EditText;
+//import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
 import com.example.calculator.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link Aritmetica#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class Aritmetica extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
@@ -30,15 +28,11 @@ public class Aritmetica extends Fragment {
     public Aritmetica() {
         // Required empty public constructor
     }
+//    private EditText et1;
+//    private EditText et2;
+//    private TextView tv1;
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment Aritmetica.
-     */
+
     // TODO: Rename and change types and number of parameters
     public static Aritmetica newInstance(String param1, String param2) {
         Aritmetica fragment = new Aritmetica();
@@ -52,10 +46,16 @@ public class Aritmetica extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+//        et1 = (EditText) et1.findViewById(R.id.txt_num1);
+//        et2 = (EditText) et2.findViewById(R.id.txt_num2);
+//        tv1 = (TextView) tv1.findViewById(R.id.txt_resusltado);
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
@@ -64,4 +64,17 @@ public class Aritmetica extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_aritmetica, container, false);
     }
+
+//        public void Sumar(View view) {
+//        String valor1 = et1.getText().toString();
+//        String valor2 = et2.getText().toString();
+//
+//        int num1 = Integer.parseInt(valor1);
+//        int num2 = Integer.parseInt(valor2);
+//
+//        int suma = num1 + num2;
+//
+//        String result = String.valueOf(suma);
+//        tv1.setText(result);
+//    }
 }

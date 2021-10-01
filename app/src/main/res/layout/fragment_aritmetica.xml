@@ -7,10 +7,10 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-<!--    <TextView-->
-<!--        android:layout_width="242dp"-->
-<!--        android:layout_height="55dp"-->
-<!--        android:text="Calcular operaciones Aritmética (Suma y Resta) de numeros binarios" />-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Calcular operaciones Aritmética (Suma y Resta) de numeros binarios" />
 
     <EditText
         android:id="@+id/txt_num1"
